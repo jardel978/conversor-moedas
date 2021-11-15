@@ -1,11 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React  from 'react';
 import './App.css';
 import Conversor from './components/Conversor/Conversor';
 
 function App() {
-
-  const [moeda1, setmoeda1] = useState("USD");
-  const [moeda2, setmoeda2] = useState("BRL");
 
   const listaMoedas = [
     "BRL - Real",
@@ -23,7 +20,7 @@ function App() {
   return (
     <div className="App">
         <h1>Conversor de Moedas</h1>
-        <Conversor moedas={listaMoedas} moedaB="BRL" />
+        <Conversor moedas={listaMoedas} />
 
     </div>
   );
